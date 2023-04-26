@@ -3,8 +3,9 @@
 
 ## Project Description:
 
-* Following the Data Science pipeline, discover if advancements in weather prediciton technologies and other measures 
-have made an effect on caasualties due to tornadoes.
+Advancement in tornado casualty limiting technologies has made significant progress. These advancements include imporoved warning systems, updated building codes, public education, research, and community response. But how much are they helping?
+
+Following the Data Science pipeline, we will discover if these advancements have made an effect on casualties due to tornadoes.
 
 ## Goals:
 
@@ -53,8 +54,12 @@ have made an effect on caasualties due to tornadoes.
 
 ## Recommendations
 
+*
+
 *  
 
 # Next Steps
+
+*
 
 * 
