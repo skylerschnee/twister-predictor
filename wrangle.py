@@ -50,6 +50,22 @@ def wrangle_tornado_data():
     # return wrangled dfs
     return df, train, test
 
+def get_df_by_month(df):
+    '''
+    get_df_by_month takes in wrangled tornado df, resamples by month and aggregates
+    columns with the proper method for timeseries data
+    '''
+    #create alternate df by resampling by the year
+    df_by_month = df.resample('M').agg({
+    'injuries': 'sum',
+    'fatalities': 'sum',
+    'length': 'mean',
+    'width': 'mean',
+    'casualties': 'sum',
+    'cas_per_mile': 'mean'
+    })
+    return df_by_month
+
 def get_df_by_year(df):
     '''
     get_df_by_year takes in wrangled tornado df, resamples by year and aggregates
@@ -65,18 +81,38 @@ def get_df_by_year(df):
     'cas_per_mile': 'mean'
     })
     return df_by_year
+
+
+def get_df_by_decade(df):
+    '''
+    get_df_by_year takes in wrangled tornado df, resamples by year and aggregates
+    columns with the proper method for that data
+    '''
+    #create alternate df by resampling by the year
+    df_by_year = df.resample('10Y').agg({
+    'injuries': 'sum',
+    'fatalities': 'sum',
+    'length': 'mean',
+    'width': 'mean',
+    'casualties': 'sum',
+    'cas_per_mile': 'mean'
+    })
+    return df_by_year
     
     
-def split_data(df, train_size=0.8):
+def split_data(df, train_size):
     '''
     Splits a time-series dataframe into training and testing sets based on a given train size.
     :param df: time-series dataframe to be split
     :param train_size: proportion of data to use for training (default: 0.8)
     :return: tuple of (training set, test set)
     '''
-    train_index = int(len(df) * train_size)
-    train = df.iloc[:train_index]
-    test = df.iloc[train_index:]
+    n = df.shape[0]
+    test_start_index = round(train_size * n)
+
+    train = df[:test_start_index] # everything up (not including) to the test_start_index
+    test = df[test_start_index:] # everything from the test_start_index to the end
     
     return train, test 
+
 
