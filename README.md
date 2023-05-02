@@ -47,7 +47,7 @@ Advancement in tornado casualty limiting technologies has made significant progr
 ## Takeaways and Conclusions
 
 
-* Without removing the vast outlier that is 2011 casualties, we are not able to build a model that out-performs the baseline RMSE. With that year removed, we are able to reduce RMSE by **32%**.
+* Without removing the vast outlier that is 2011 casualties, we are not able to build a model that out-performs the baseline RMSE. With that years casualty data edited to that decades median casualty number, we are able to reduce RMSE by **32%**.
 
 
 * This shows us that despite the efforts and advancements to mitigate tornado casualties, there not much that can help hedge against the wrath of mother nature during an event like the *2011 Super Outbreak*. **On April 27th alone**, **216** tornadoes touched down in the US, with **4** being rated at EF5- we average less than **1** tornado of this magnitude per year.
