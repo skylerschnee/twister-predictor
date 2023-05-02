@@ -3,9 +3,7 @@
 
 ## Project Description:
 
-Advancement in tornado casualty limiting technologies has made significant progress. These advancements include imporoved warning systems, updated building codes, public education, research, and community response. But how much are they helping?
-
-Following the Data Science pipeline, we will discover if these advancements have made an effect on casualties due to tornadoes while using time-series machine learning models to predict future casualties.
+Advancement in tornado casualty limiting technologies has made significant progress. These advancements include improved warning systems, updated building codes, public education, research, and community response. But how much are they helping? Following the Data Science pipeline, I will discover if these advancements have made an effect on casualties due to tornadoes while using time-series machine learning models in an attempt to predict future casualties.
 
 ## Goals:
 
