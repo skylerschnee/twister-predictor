@@ -61,7 +61,7 @@ Advancement in tornado casualty limiting technologies has made significant progr
 
 # Next Steps
 
-* With more time, I would like to conduct this analysis but break the original dataset into subsets for each EF rating, then compare to see how accurately we can predict future casualties among different levels of damage potential. I believe this will reinforce my conclusion that our efforts in casualty mitigation have been succesful, but not much can help us when EF-4s and -5s are touching down.   
+* With more time, I would like to conduct similar analysis, but break the original dataset into individual subsets by each EF rating, then compare to see how accurately we can predict future casualties among different levels of damage potential. I believe this will reinforce my conclusion that our efforts in casualty mitigation have been succesful, but not much has helped us when EF-4s and -5s are touching down.   
 
 #### Sources: 
  - https://celebrating200years.noaa.gov/magazine/tornado_forecasting/#research
